@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/script.js"></script>
+
+        <title>Currency Converter</title>
+
+    </head>
+
+    <body>
+
+        <section class="main-body">
+            <div class="converter-container">
+        <h2>Currency Converter</h2>
+        <br>
+        <br>
+            
+        <div class="container">
+
+            <form action="#" method="post" name="cc">
+
+                <div class="form-item">
+                <label for="dollar">USD:</label>
+                <input id="dollar" placeholder="ENTER VALUE" class="textbox textbox1" type="text" name="dollar">
+            </div>
+
+            <div class="form-item">
+                <label for="convert">Convert To:</label>
+                <select name="convert" id ="convert" class="textbox textbox2">
+                    <option value="0">SELECT THE CURRENCY</option>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <option value="1">PKR</option>&nbsp;&nbsp;
+                    <option value="2">INR</option>
+                    <option value="3">EURO</option>
+                    <option value="4">POUNDS</option>
+                    <option value="5">YEN</option>
+                    <option value="6">CAD</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <label for="cv">Result:</label>
+                <input type="hidden" class="textbox textbox3" name="cv" id="cv12" readonly />
+            </div>
+
+                <input type="button" class="btn" name="submit" value="Convert" onclick="converter()">
+
+            </form>
+
+        </div>
+    </div>        
+    </section> 
+    </body>
+
+</html>
